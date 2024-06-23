@@ -1,5 +1,12 @@
 # SotDL
 
+init
+```sh
+# auto spilt markdown file
+cd ./origin
+python spilter.py
+```
+
 deploy
 ```sh
 # generate sidebar file

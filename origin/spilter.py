@@ -13,33 +13,53 @@ def create_files_from_markdown(file_path, output_directory):
     current_h1 = None
     current_h2 = None
     current_content = []
+    h1_content_written = False
 
     for line in lines:
         if line.startswith("# "):
             # New H1 header
-            if current_h1 and current_h2:
+            if current_h1:
                 # Write the last section to a file
-                write_section_to_file(
-                    output_directory, current_h1, current_h2, current_content
-                )
+                if current_h2:
+                    write_section_to_file(
+                        output_directory, current_h1, current_h2, current_content
+                    )
+                elif current_content:
+                    write_section_to_file(
+                        output_directory, current_h1, current_h1, current_content
+                    )
             current_h1 = line[2:].strip()
             current_h2 = None
             current_content = []
-        elif line.startswith("# "):
+            h1_content_written = False
+        elif line.startswith("## "):
             # New H2 header
             if current_h2:
                 # Write the last section to a file
                 write_section_to_file(
                     output_directory, current_h1, current_h2, current_content
                 )
+            elif current_content and not h1_content_written:
+                # Write content between H1 and the first H2 to <H1>/<H1>.md
+                write_section_to_file(
+                    output_directory, current_h1, current_h1, current_content
+                )
+                h1_content_written = True
             current_h2 = line[3:].strip()
             current_content = []
         else:
             current_content.append(line)
 
     # Write the last section to a file
-    if current_h1 and current_h2:
-        write_section_to_file(output_directory, current_h1, current_h2, current_content)
+    if current_h1:
+        if current_h2:
+            write_section_to_file(
+                output_directory, current_h1, current_h2, current_content
+            )
+        elif current_content:
+            write_section_to_file(
+                output_directory, current_h1, current_h1, current_content
+            )
 
 
 def write_section_to_file(output_directory, h1, h2, content):
@@ -47,7 +67,7 @@ def write_section_to_file(output_directory, h1, h2, content):
     h1_directory = os.path.join(output_directory, sanitize_filename(h1))
     os.makedirs(h1_directory, exist_ok=True)
 
-    # Create file for H2
+    # Create file for H2 or H1 if there is no H2
     file_path = os.path.join(h1_directory, sanitize_filename(h2) + ".md")
     with open(file_path, "w", encoding="utf-8") as f:
         f.write("# " + h2 + "\n")
