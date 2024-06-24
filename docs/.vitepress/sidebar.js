@@ -127,6 +127,18 @@ module.exports = [
   {
     "text": "C06-角色扮演贴士",
     "link": "/C06-角色扮演贴士/C06-角色扮演贴士.md",
+    "items": [
+      {
+        "text": "6.1 角色扮演",
+        "link": "/C06-角色扮演贴士/6.1 角色扮演.md",
+        "collapsed": true
+      },
+      {
+        "text": "6.2 GM和讲故事的艺术",
+        "link": "/C06-角色扮演贴士/6.2 GM和讲故事的艺术.md",
+        "collapsed": true
+      }
+    ],
     "collapsed": true
   },
   {
