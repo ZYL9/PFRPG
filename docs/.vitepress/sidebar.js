@@ -85,8 +85,8 @@ module.exports = [
     "link": "/C04-经验值/C04-经验值.md",
     "items": [
       {
-        "text": "4.1经验值及其应用",
-        "link": "/C04-经验值/4.1经验值及其应用.md",
+        "text": "4.1经验值概述",
+        "link": "/C04-经验值/4.1经验值概述.md",
         "collapsed": true
       },
       {
@@ -95,18 +95,8 @@ module.exports = [
         "collapsed": true
       },
       {
-        "text": "4.3经验和生命",
-        "link": "/C04-经验值/4.3经验和生命.md",
-        "collapsed": true
-      },
-      {
-        "text": "4.4每级的经验",
-        "link": "/C04-经验值/4.4每级的经验.md",
-        "collapsed": true
-      },
-      {
-        "text": "4.5经验值表",
-        "link": "/C04-经验值/4.5经验值表.md",
+        "text": "4.3经验值表",
+        "link": "/C04-经验值/4.3经验值表.md",
         "collapsed": true
       }
     ],
@@ -119,6 +109,16 @@ module.exports = [
       {
         "text": "5.1 角色背景",
         "link": "/C05-角色背景/5.1 角色背景.md",
+        "collapsed": true
+      },
+      {
+        "text": "5.2 年龄",
+        "link": "/C05-角色背景/5.2 年龄.md",
+        "collapsed": true
+      },
+      {
+        "text": "5.3 科技",
+        "link": "/C05-角色背景/5.3 科技.md",
         "collapsed": true
       }
     ],
