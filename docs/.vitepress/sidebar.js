@@ -107,18 +107,18 @@ module.exports = [
     "link": "/C05-角色背景/C05-角色背景.md",
     "items": [
       {
-        "text": "5.1 角色背景",
-        "link": "/C05-角色背景/5.1 角色背景.md",
+        "text": "5.1角色背景",
+        "link": "/C05-角色背景/5.1角色背景.md",
         "collapsed": true
       },
       {
-        "text": "5.2 年龄",
-        "link": "/C05-角色背景/5.2 年龄.md",
+        "text": "5.2年龄",
+        "link": "/C05-角色背景/5.2年龄.md",
         "collapsed": true
       },
       {
-        "text": "5.3 科技",
-        "link": "/C05-角色背景/5.3 科技.md",
+        "text": "5.3科技",
+        "link": "/C05-角色背景/5.3科技.md",
         "collapsed": true
       }
     ],
@@ -156,18 +156,18 @@ module.exports = [
         "collapsed": true
       },
       {
-        "text": "恐怖值",
-        "link": "/C07-战斗规则/恐怖值.md",
+        "text": "7.3近身战斗",
+        "link": "/C07-战斗规则/7.3近身战斗.md",
         "collapsed": true
       },
       {
-        "text": "灵能战斗",
-        "link": "/C07-战斗规则/灵能战斗.md",
+        "text": "7.4灵能战斗",
+        "link": "/C07-战斗规则/7.4灵能战斗.md",
         "collapsed": true
       },
       {
-        "text": "近身战斗",
-        "link": "/C07-战斗规则/近身战斗.md",
+        "text": "7.5恐怖值",
+        "link": "/C07-战斗规则/7.5恐怖值.md",
         "collapsed": true
       }
     ],
