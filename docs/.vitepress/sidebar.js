@@ -557,60 +557,31 @@ module.exports = [
       },
       {
         "text": "9.3可选职业",
+        "link": "/C09-玩家角色/9.3可选职业/9.3可选职业.md",
         "items": [
           {
-            "text": "侍从",
-            "link": "/C09-玩家角色/9.3可选职业/侍从.md",
+            "text": "1.商人",
+            "link": "/C09-玩家角色/9.3可选职业/1.商人.md",
             "collapsed": true
           },
           {
-            "text": "侍从的护甲",
-            "link": "/C09-玩家角色/9.3可选职业/侍从的护甲.md",
+            "text": "2.贵族",
+            "link": "/C09-玩家角色/9.3可选职业/2.贵族.md",
             "collapsed": true
           },
           {
-            "text": "可选职业",
-            "link": "/C09-玩家角色/9.3可选职业/可选职业.md",
+            "text": "3.学者",
+            "link": "/C09-玩家角色/9.3可选职业/3.学者.md",
             "collapsed": true
           },
           {
-            "text": "家庭背景和家族技能",
-            "link": "/C09-玩家角色/9.3可选职业/家庭背景和家族技能.md",
+            "text": "4.侍从",
+            "link": "/C09-玩家角色/9.3可选职业/4.侍从.md",
             "collapsed": true
           },
           {
-            "text": "职业：侍从",
-            "link": "/C09-玩家角色/9.3可选职业/职业：侍从.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：商人",
-            "link": "/C09-玩家角色/9.3可选职业/职业：商人.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：学者",
-            "link": "/C09-玩家角色/9.3可选职业/职业：学者.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：流浪汉_佃农_农民",
-            "link": "/C09-玩家角色/9.3可选职业/职业：流浪汉_佃农_农民.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：贵族",
-            "link": "/C09-玩家角色/9.3可选职业/职业：贵族.md",
-            "collapsed": true
-          },
-          {
-            "text": "贵族",
-            "link": "/C09-玩家角色/9.3可选职业/贵族.md",
-            "collapsed": true
-          },
-          {
-            "text": "贵族的护甲",
-            "link": "/C09-玩家角色/9.3可选职业/贵族的护甲.md",
+            "text": "5.流浪汉_佃农_农民",
+            "link": "/C09-玩家角色/9.3可选职业/5.流浪汉_佃农_农民.md",
             "collapsed": true
           }
         ],
@@ -618,230 +589,213 @@ module.exports = [
       },
       {
         "text": "9.4魔法之道",
+        "link": "/C09-玩家角色/9.4魔法之道/9.4魔法之道.md",
         "items": [
           {
-            "text": "会员服务",
-            "link": "/C09-玩家角色/9.4魔法之道/会员服务.md",
+            "text": "1.魔法工会",
+            "items": [
+              {
+                "text": "1.魔法公会",
+                "link": "/C09-玩家角色/9.4魔法之道/1.魔法工会/1.魔法公会.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.会员服务",
+                "link": "/C09-玩家角色/9.4魔法之道/1.魔法工会/2.会员服务.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.非公会成员服务",
+                "link": "/C09-玩家角色/9.4魔法之道/1.魔法工会/3.非公会成员服务.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.公会会员",
+                "link": "/C09-玩家角色/9.4魔法之道/1.魔法工会/4.公会会员.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "元素使 Warlock",
-            "link": "/C09-玩家角色/9.4魔法之道/元素使 Warlock.md",
+            "text": "2.法师Wizard",
+            "items": [
+              {
+                "text": "1.背景：法师 Wizard",
+                "link": "/C09-玩家角色/9.4魔法之道/2.法师Wizard/1.背景：法师 Wizard.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.法师的护甲",
+                "link": "/C09-玩家角色/9.4魔法之道/2.法师Wizard/2.法师的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.法师：法阵和符号",
+                "link": "/C09-玩家角色/9.4魔法之道/2.法师Wizard/3.法师：法阵和符号.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.转化法术卷轴",
+                "link": "/C09-玩家角色/9.4魔法之道/2.法师Wizard/4.转化法术卷轴.md",
+                "collapsed": true
+              },
+              {
+                "text": "5.法师能力及加值",
+                "link": "/C09-玩家角色/9.4魔法之道/2.法师Wizard/5.法师能力及加值.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：法师",
+                "link": "/C09-玩家角色/9.4魔法之道/2.法师Wizard/职业：法师.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "元素使的力量",
-            "link": "/C09-玩家角色/9.4魔法之道/元素使的力量.md",
+            "text": "3.元素使Warlock",
+            "items": [
+              {
+                "text": "1.背景：元素使 Warlock",
+                "link": "/C09-玩家角色/9.4魔法之道/3.元素使Warlock/1.背景：元素使 Warlock.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.元素使的护甲",
+                "link": "/C09-玩家角色/9.4魔法之道/3.元素使Warlock/2.元素使的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.元素使的力量",
+                "link": "/C09-玩家角色/9.4魔法之道/3.元素使Warlock/3.元素使的力量.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.元素相关注释",
+                "link": "/C09-玩家角色/9.4魔法之道/3.元素使Warlock/4.元素相关注释.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：元素使",
+                "link": "/C09-玩家角色/9.4魔法之道/3.元素使Warlock/职业：元素使.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "元素使的护甲",
-            "link": "/C09-玩家角色/9.4魔法之道/元素使的护甲.md",
+            "text": "4.巫师Witch",
+            "items": [
+              {
+                "text": "1.背景：巫师 Witch",
+                "link": "/C09-玩家角色/9.4魔法之道/4.巫师Witch/1.背景：巫师 Witch.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.1力量之礼",
+                "link": "/C09-玩家角色/9.4魔法之道/4.巫师Witch/2.1力量之礼.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.2魔法之礼",
+                "link": "/C09-玩家角色/9.4魔法之道/4.巫师Witch/2.2魔法之礼.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.3联合之礼",
+                "link": "/C09-玩家角色/9.4魔法之道/4.巫师Witch/2.3联合之礼.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.契约",
+                "link": "/C09-玩家角色/9.4魔法之道/4.巫师Witch/3.契约.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.邪魔印记",
+                "link": "/C09-玩家角色/9.4魔法之道/4.巫师Witch/4.邪魔印记.md",
+                "collapsed": true
+              },
+              {
+                "text": "5.恶魔魔宠",
+                "link": "/C09-玩家角色/9.4魔法之道/4.巫师Witch/5.恶魔魔宠.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：巫师",
+                "link": "/C09-玩家角色/9.4魔法之道/4.巫师Witch/职业：巫师.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "元素相关注释",
-            "link": "/C09-玩家角色/9.4魔法之道/元素相关注释.md",
+            "text": "5.魔导师Diabolist",
+            "items": [
+              {
+                "text": "1.背景：魔导师 Diabolist",
+                "link": "/C09-玩家角色/9.4魔法之道/5.魔导师Diabolist/1.背景：魔导师 Diabolist.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.魔导师的护甲",
+                "link": "/C09-玩家角色/9.4魔法之道/5.魔导师Diabolist/2.魔导师的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.真言",
+                "link": "/C09-玩家角色/9.4魔法之道/5.魔导师Diabolist/3.真言.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.符文之密",
+                "link": "/C09-玩家角色/9.4魔法之道/5.魔导师Diabolist/4.符文之密.md",
+                "collapsed": true
+              },
+              {
+                "text": "5.魔导师的知识与能力",
+                "link": "/C09-玩家角色/9.4魔法之道/5.魔导师Diabolist/5.魔导师的知识与能力.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：魔导师",
+                "link": "/C09-玩家角色/9.4魔法之道/5.魔导师Diabolist/职业：魔导师.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "免疫",
-            "link": "/C09-玩家角色/9.4魔法之道/免疫.md",
+            "text": "6.召唤师Summoner",
+            "items": [
+              {
+                "text": "1.背景：召唤师",
+                "link": "/C09-玩家角色/9.4魔法之道/6.召唤师Summoner/1.背景：召唤师.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "公会会员",
-            "link": "/C09-玩家角色/9.4魔法之道/公会会员.md",
-            "collapsed": true
-          },
-          {
-            "text": "公会理事会",
-            "link": "/C09-玩家角色/9.4魔法之道/公会理事会.md",
-            "collapsed": true
-          },
-          {
-            "text": "其他魔法社群",
-            "link": "/C09-玩家角色/9.4魔法之道/其他魔法社群.md",
-            "collapsed": true
-          },
-          {
-            "text": "力量之礼",
-            "link": "/C09-玩家角色/9.4魔法之道/力量之礼.md",
-            "collapsed": true
-          },
-          {
-            "text": "召唤师Summoner",
-            "link": "/C09-玩家角色/9.4魔法之道/召唤师Summoner.md",
-            "collapsed": true
-          },
-          {
-            "text": "契约",
-            "link": "/C09-玩家角色/9.4魔法之道/契约.md",
-            "collapsed": true
-          },
-          {
-            "text": "巫师 Witch",
-            "link": "/C09-玩家角色/9.4魔法之道/巫师 Witch.md",
-            "collapsed": true
-          },
-          {
-            "text": "开除",
-            "link": "/C09-玩家角色/9.4魔法之道/开除.md",
-            "collapsed": true
-          },
-          {
-            "text": "恶魔魔宠",
-            "link": "/C09-玩家角色/9.4魔法之道/恶魔魔宠.md",
-            "collapsed": true
-          },
-          {
-            "text": "法师 Wizard",
-            "link": "/C09-玩家角色/9.4魔法之道/法师 Wizard.md",
-            "collapsed": true
-          },
-          {
-            "text": "法师的护甲",
-            "link": "/C09-玩家角色/9.4魔法之道/法师的护甲.md",
-            "collapsed": true
-          },
-          {
-            "text": "法师能力及加值",
-            "link": "/C09-玩家角色/9.4魔法之道/法师能力及加值.md",
-            "collapsed": true
-          },
-          {
-            "text": "法师：法阵和符号",
-            "link": "/C09-玩家角色/9.4魔法之道/法师：法阵和符号.md",
-            "collapsed": true
-          },
-          {
-            "text": "真言",
-            "link": "/C09-玩家角色/9.4魔法之道/真言.md",
-            "collapsed": true
-          },
-          {
-            "text": "符文之密",
-            "link": "/C09-玩家角色/9.4魔法之道/符文之密.md",
-            "collapsed": true
-          },
-          {
-            "text": "粘黏结界",
-            "link": "/C09-玩家角色/9.4魔法之道/粘黏结界.md",
-            "collapsed": true
-          },
-          {
-            "text": "结界充能",
-            "link": "/C09-玩家角色/9.4魔法之道/结界充能.md",
-            "collapsed": true
-          },
-          {
-            "text": "结界如何工作",
-            "link": "/C09-玩家角色/9.4魔法之道/结界如何工作.md",
-            "collapsed": true
-          },
-          {
-            "text": "结界持续时间",
-            "link": "/C09-玩家角色/9.4魔法之道/结界持续时间.md",
-            "collapsed": true
-          },
-          {
-            "text": "结界的大小",
-            "link": "/C09-玩家角色/9.4魔法之道/结界的大小.md",
-            "collapsed": true
-          },
-          {
-            "text": "结界的布设",
-            "link": "/C09-玩家角色/9.4魔法之道/结界的布设.md",
-            "collapsed": true
-          },
-          {
-            "text": "结界短句",
-            "link": "/C09-玩家角色/9.4魔法之道/结界短句.md",
-            "collapsed": true
-          },
-          {
-            "text": "结界魔法",
-            "link": "/C09-玩家角色/9.4魔法之道/结界魔法.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：元素使",
-            "link": "/C09-玩家角色/9.4魔法之道/职业：元素使.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：巫师",
-            "link": "/C09-玩家角色/9.4魔法之道/职业：巫师.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：法师",
-            "link": "/C09-玩家角色/9.4魔法之道/职业：法师.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：魔导师",
-            "link": "/C09-玩家角色/9.4魔法之道/职业：魔导师.md",
-            "collapsed": true
-          },
-          {
-            "text": "联合之礼",
-            "link": "/C09-玩家角色/9.4魔法之道/联合之礼.md",
-            "collapsed": true
-          },
-          {
-            "text": "豁免结界",
-            "link": "/C09-玩家角色/9.4魔法之道/豁免结界.md",
-            "collapsed": true
-          },
-          {
-            "text": "转化法术卷轴",
-            "link": "/C09-玩家角色/9.4魔法之道/转化法术卷轴.md",
-            "collapsed": true
-          },
-          {
-            "text": "邪魔印记",
-            "link": "/C09-玩家角色/9.4魔法之道/邪魔印记.md",
-            "collapsed": true
-          },
-          {
-            "text": "防护徽记以及描述Ward Symbols and Descriptions",
-            "link": "/C09-玩家角色/9.4魔法之道/防护徽记以及描述Ward Symbols and Descriptions.md",
-            "collapsed": true
-          },
-          {
-            "text": "非公会成员服务",
-            "link": "/C09-玩家角色/9.4魔法之道/非公会成员服务.md",
-            "collapsed": true
-          },
-          {
-            "text": "魔导师 Diabolist",
-            "link": "/C09-玩家角色/9.4魔法之道/魔导师 Diabolist.md",
-            "collapsed": true
-          },
-          {
-            "text": "魔导师的护甲",
-            "link": "/C09-玩家角色/9.4魔法之道/魔导师的护甲.md",
-            "collapsed": true
-          },
-          {
-            "text": "魔导师的知识与能力",
-            "link": "/C09-玩家角色/9.4魔法之道/魔导师的知识与能力.md",
-            "collapsed": true
-          },
-          {
-            "text": "魔法之礼",
-            "link": "/C09-玩家角色/9.4魔法之道/魔法之礼.md",
-            "collapsed": true
-          },
-          {
-            "text": "魔法之道",
-            "link": "/C09-玩家角色/9.4魔法之道/魔法之道.md",
-            "collapsed": true
-          },
-          {
-            "text": "魔法公会",
-            "link": "/C09-玩家角色/9.4魔法之道/魔法公会.md",
+            "text": "7.雕纹魔法",
+            "items": [
+              {
+                "text": "1.雕纹魔法",
+                "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/1.雕纹魔法.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.雕纹的布设&充能",
+                "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/2.雕纹的布设&充能.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.雕纹的免疫&豁免",
+                "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/3.雕纹的免疫&豁免.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           }
         ],
