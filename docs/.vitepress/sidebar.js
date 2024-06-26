@@ -317,170 +317,239 @@ module.exports = [
       },
       {
         "text": "9.2武装人员",
+        "link": "/C09-玩家角色/9.2武装人员/9.2武装人员.md",
         "items": [
           {
-            "text": "典范骑士 Paladin",
-            "link": "/C09-玩家角色/9.2武装人员/典范骑士 Paladin.md",
+            "text": "1.雇佣兵",
+            "items": [
+              {
+                "text": "1.背景：雇佣兵",
+                "link": "/C09-玩家角色/9.2武装人员/1.雇佣兵/1.背景：雇佣兵.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.雇佣兵的护甲",
+                "link": "/C09-玩家角色/9.2武装人员/1.雇佣兵/2.雇佣兵的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.雇佣兵的雇佣任务",
+                "link": "/C09-玩家角色/9.2武装人员/1.雇佣兵/3.雇佣兵的雇佣任务.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：雇佣兵",
+                "link": "/C09-玩家角色/9.2武装人员/1.雇佣兵/职业：雇佣兵.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "典范骑士特殊训练及精通",
-            "link": "/C09-玩家角色/9.2武装人员/典范骑士特殊训练及精通.md",
+            "text": "2.士兵",
+            "items": [
+              {
+                "text": "1.背景：士兵",
+                "link": "/C09-玩家角色/9.2武装人员/2.士兵/1.背景：士兵.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.成为士兵的优势",
+                "link": "/C09-玩家角色/9.2武装人员/2.士兵/2.成为士兵的优势.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.士兵的护甲",
+                "link": "/C09-玩家角色/9.2武装人员/2.士兵/3.士兵的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：士兵",
+                "link": "/C09-玩家角色/9.2武装人员/2.士兵/职业：士兵.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "刺客",
-            "link": "/C09-玩家角色/9.2武装人员/刺客.md",
+            "text": "3.长弓手",
+            "items": [
+              {
+                "text": "1.背景：长弓手",
+                "link": "/C09-玩家角色/9.2武装人员/3.长弓手/1.背景：长弓手.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.长弓手的特殊能力",
+                "link": "/C09-玩家角色/9.2武装人员/3.长弓手/2.长弓手的特殊能力.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.长弓手护甲",
+                "link": "/C09-玩家角色/9.2武装人员/3.长弓手/3.长弓手护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：长弓手",
+                "link": "/C09-玩家角色/9.2武装人员/3.长弓手/职业：长弓手.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "刺客和他们的服务",
-            "link": "/C09-玩家角色/9.2武装人员/刺客和他们的服务.md",
+            "text": "4.骑士",
+            "items": [
+              {
+                "text": "1.背景：骑士",
+                "link": "/C09-玩家角色/9.2武装人员/4.骑士/1.背景：骑士.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.骑士的护甲",
+                "link": "/C09-玩家角色/9.2武装人员/4.骑士/2.骑士的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.骑士特殊训练及精通",
+                "link": "/C09-玩家角色/9.2武装人员/4.骑士/3.骑士特殊训练及精通.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.骑士家庭背景",
+                "link": "/C09-玩家角色/9.2武装人员/4.骑士/4.骑士家庭背景.md",
+                "collapsed": true
+              },
+              {
+                "text": "5.家族技能",
+                "link": "/C09-玩家角色/9.2武装人员/4.骑士/5.家族技能.md",
+                "collapsed": true
+              },
+              {
+                "text": "6.骑士道守则",
+                "link": "/C09-玩家角色/9.2武装人员/4.骑士/6.骑士道守则.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：骑士",
+                "link": "/C09-玩家角色/9.2武装人员/4.骑士/职业：骑士.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "刺客的护甲",
-            "link": "/C09-玩家角色/9.2武装人员/刺客的护甲.md",
+            "text": "5.典范骑士",
+            "items": [
+              {
+                "text": "1.背景：典范骑士 Paladin",
+                "link": "/C09-玩家角色/9.2武装人员/5.典范骑士/1.背景：典范骑士 Paladin.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.典范骑士的护甲",
+                "link": "/C09-玩家角色/9.2武装人员/5.典范骑士/2.典范骑士的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.典范骑士特殊训练及精通",
+                "link": "/C09-玩家角色/9.2武装人员/5.典范骑士/3.典范骑士特殊训练及精通.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.典范骑士的家庭背景",
+                "link": "/C09-玩家角色/9.2武装人员/5.典范骑士/4.典范骑士的家庭背景.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：典范骑士",
+                "link": "/C09-玩家角色/9.2武装人员/5.典范骑士/职业：典范骑士.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "士兵",
-            "link": "/C09-玩家角色/9.2武装人员/士兵.md",
+            "text": "6.游侠",
+            "items": [
+              {
+                "text": "1.背景：游侠",
+                "link": "/C09-玩家角色/9.2武装人员/6.游侠/1.背景：游侠.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.游侠的护甲",
+                "link": "/C09-玩家角色/9.2武装人员/6.游侠/2.游侠的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：游侠",
+                "link": "/C09-玩家角色/9.2武装人员/6.游侠/职业：游侠.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "士兵的护甲",
-            "link": "/C09-玩家角色/9.2武装人员/士兵的护甲.md",
+            "text": "7.盗贼",
+            "items": [
+              {
+                "text": "1.背景：盗贼",
+                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/1.背景：盗贼.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.1盗贼行会-销赃",
+                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.1盗贼行会-销赃.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.2盗贼行会-服务",
+                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.2盗贼行会-服务.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.盗贼行会",
+                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.盗贼行会.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.盗贼的护甲",
+                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/3.盗贼的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：盗贼",
+                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/职业：盗贼.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           },
           {
-            "text": "家族技能",
-            "link": "/C09-玩家角色/9.2武装人员/家族技能.md",
-            "collapsed": true
-          },
-          {
-            "text": "成为士兵的优势",
-            "link": "/C09-玩家角色/9.2武装人员/成为士兵的优势.md",
-            "collapsed": true
-          },
-          {
-            "text": "武装人员",
-            "link": "/C09-玩家角色/9.2武装人员/武装人员.md",
-            "collapsed": true
-          },
-          {
-            "text": "游侠",
-            "link": "/C09-玩家角色/9.2武装人员/游侠.md",
-            "collapsed": true
-          },
-          {
-            "text": "游侠的护甲",
-            "link": "/C09-玩家角色/9.2武装人员/游侠的护甲.md",
-            "collapsed": true
-          },
-          {
-            "text": "盗贼",
-            "link": "/C09-玩家角色/9.2武装人员/盗贼.md",
-            "collapsed": true
-          },
-          {
-            "text": "盗贼的护甲",
-            "link": "/C09-玩家角色/9.2武装人员/盗贼的护甲.md",
-            "collapsed": true
-          },
-          {
-            "text": "盗贼行会",
-            "link": "/C09-玩家角色/9.2武装人员/盗贼行会.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：典范骑士",
-            "link": "/C09-玩家角色/9.2武装人员/职业：典范骑士.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：刺客",
-            "link": "/C09-玩家角色/9.2武装人员/职业：刺客.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：士兵",
-            "link": "/C09-玩家角色/9.2武装人员/职业：士兵.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：游侠",
-            "link": "/C09-玩家角色/9.2武装人员/职业：游侠.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：盗贼",
-            "link": "/C09-玩家角色/9.2武装人员/职业：盗贼.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：长弓手",
-            "link": "/C09-玩家角色/9.2武装人员/职业：长弓手.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：雇佣兵",
-            "link": "/C09-玩家角色/9.2武装人员/职业：雇佣兵.md",
-            "collapsed": true
-          },
-          {
-            "text": "职业：骑士",
-            "link": "/C09-玩家角色/9.2武装人员/职业：骑士.md",
-            "collapsed": true
-          },
-          {
-            "text": "长弓手",
-            "link": "/C09-玩家角色/9.2武装人员/长弓手.md",
-            "collapsed": true
-          },
-          {
-            "text": "长弓手护甲",
-            "link": "/C09-玩家角色/9.2武装人员/长弓手护甲.md",
-            "collapsed": true
-          },
-          {
-            "text": "长弓手的特殊能力",
-            "link": "/C09-玩家角色/9.2武装人员/长弓手的特殊能力.md",
-            "collapsed": true
-          },
-          {
-            "text": "雇佣兵",
-            "link": "/C09-玩家角色/9.2武装人员/雇佣兵.md",
-            "collapsed": true
-          },
-          {
-            "text": "雇佣兵的护甲",
-            "link": "/C09-玩家角色/9.2武装人员/雇佣兵的护甲.md",
-            "collapsed": true
-          },
-          {
-            "text": "雇佣兵的雇佣任务",
-            "link": "/C09-玩家角色/9.2武装人员/雇佣兵的雇佣任务.md",
-            "collapsed": true
-          },
-          {
-            "text": "骑士",
-            "link": "/C09-玩家角色/9.2武装人员/骑士.md",
-            "collapsed": true
-          },
-          {
-            "text": "骑士家庭背景",
-            "link": "/C09-玩家角色/9.2武装人员/骑士家庭背景.md",
-            "collapsed": true
-          },
-          {
-            "text": "骑士特殊训练及精通",
-            "link": "/C09-玩家角色/9.2武装人员/骑士特殊训练及精通.md",
-            "collapsed": true
-          },
-          {
-            "text": "骑士道守则",
-            "link": "/C09-玩家角色/9.2武装人员/骑士道守则.md",
+            "text": "8.刺客",
+            "items": [
+              {
+                "text": "1.背景：刺客",
+                "link": "/C09-玩家角色/9.2武装人员/8.刺客/1.背景：刺客.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.刺客的护甲",
+                "link": "/C09-玩家角色/9.2武装人员/8.刺客/2.刺客的护甲.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.刺客和他们的服务",
+                "link": "/C09-玩家角色/9.2武装人员/8.刺客/3.刺客和他们的服务.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：刺客",
+                "link": "/C09-玩家角色/9.2武装人员/8.刺客/职业：刺客.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           }
         ],
