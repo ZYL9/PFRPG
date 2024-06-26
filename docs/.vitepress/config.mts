@@ -33,7 +33,7 @@ export default withPwa(
     pwa: {
       includeAssets: ["favicon.ico"],
       workbox: {
-        globPatterns: ["**/*.{css,js,html,jpg,svg,png,ico,txt,woff2}"],
+        globPatterns: ["**/*.{css,js,html,jpg,svg,png,ico,webp,txt,woff2}"],
       },
       manifest: {
         name: "钯界传奇",
