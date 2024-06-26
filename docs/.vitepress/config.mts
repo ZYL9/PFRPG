@@ -32,7 +32,6 @@ export default withPwa(
     },
     pwa: {
       includeAssets: ["favicon.ico"],
-      registerType: "autoUpdate",
       workbox: {
         globPatterns: ["**/*.{css,js,html,jpg,svg,png,ico,txt,woff2}"],
       },
