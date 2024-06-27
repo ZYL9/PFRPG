@@ -794,6 +794,124 @@ module.exports = [
                 "text": "3.雕纹的免疫&豁免",
                 "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/3.雕纹的免疫&豁免.md",
                 "collapsed": true
+              },
+              {
+                "text": "4.雕纹的持续时间",
+                "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/4.雕纹的持续时间.md",
+                "collapsed": true
+              },
+              {
+                "text": "5.雕纹的复合",
+                "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/5.雕纹的复合.md",
+                "collapsed": true
+              },
+              {
+                "text": "6.雕纹材料&制作",
+                "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/6.雕纹材料&制作.md",
+                "collapsed": true
+              },
+              {
+                "text": "7.摧毁雕纹",
+                "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/7.摧毁雕纹.md",
+                "collapsed": true
+              },
+              {
+                "text": "8.雕纹武库",
+                "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/8.雕纹武库.md",
+                "collapsed": true
+              },
+              {
+                "text": "9.雕纹符号及描述",
+                "items": [
+                  {
+                    "text": "1.警报",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/1.警报.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "2.范围效应",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/2.范围效应.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "3.状态",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/3.状态.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "4.造成",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/4.造成.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "5.数字",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/5.数字.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "6.永久",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/6.永久.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "7.威能",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/7.威能.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "8.保护",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/8.保护.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "9.触发",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/9.触发.md",
+                    "collapsed": true
+                  }
+                ],
+                "collapsed": true
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "8.法阵",
+            "items": [
+              {
+                "text": "1.法阵概述",
+                "link": "/C09-玩家角色/9.4魔法之道/8.法阵/1.法阵概述.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.1保护法阵",
+                "link": "/C09-玩家角色/9.4魔法之道/8.法阵/2.1保护法阵.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.2召唤法阵",
+                "items": [
+                  {
+                    "text": "1.召唤法阵怎么工作",
+                    "link": "/C09-玩家角色/9.4魔法之道/8.法阵/2.2召唤法阵/1.召唤法阵怎么工作.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "2.从属生物",
+                    "link": "/C09-玩家角色/9.4魔法之道/8.法阵/2.2召唤法阵/2.从属生物.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "3.召唤法阵",
+                    "link": "/C09-玩家角色/9.4魔法之道/8.法阵/2.2召唤法阵/3.召唤法阵.md",
+                    "collapsed": true
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "text": "2.3力量法阵",
+                "link": "/C09-玩家角色/9.4魔法之道/8.法阵/2.3力量法阵.md",
+                "collapsed": true
               }
             ],
             "collapsed": true
@@ -805,38 +923,29 @@ module.exports = [
         "text": "9.5灵能力量",
         "items": [
           {
-            "text": "感知系 Sensitive",
-            "link": "/C09-玩家角色/9.5灵能力量/感知系 Sensitive.md",
+            "text": "1.灵能力量",
+            "link": "/C09-玩家角色/9.5灵能力量/1.灵能力量.md",
             "collapsed": true
           },
           {
-            "text": "治愈系 Healing",
-            "link": "/C09-玩家角色/9.5灵能力量/治愈系 Healing.md",
-            "collapsed": true
-          },
-          {
-            "text": "灵能力量",
-            "link": "/C09-玩家角色/9.5灵能力量/灵能力量.md",
-            "collapsed": true
-          },
-          {
-            "text": "灵能描述",
-            "link": "/C09-玩家角色/9.5灵能力量/灵能描述.md",
-            "collapsed": true
-          },
-          {
-            "text": "灵能职业",
-            "link": "/C09-玩家角色/9.5灵能力量/灵能职业.md",
-            "collapsed": true
-          },
-          {
-            "text": "物理系 Physical",
-            "link": "/C09-玩家角色/9.5灵能力量/物理系 Physical.md",
-            "collapsed": true
-          },
-          {
-            "text": "超能系 Super Psionics",
-            "link": "/C09-玩家角色/9.5灵能力量/超能系 Super Psionics.md",
+            "text": "2.灵能职业",
+            "items": [
+              {
+                "text": "1.灵能职业",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/1.灵能职业.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.物理系 Physical",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/2.物理系 Physical.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.治愈系 Healing",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/3.治愈系 Healing.md",
+                "collapsed": true
+              }
+            ],
             "collapsed": true
           }
         ],
