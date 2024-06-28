@@ -773,6 +773,16 @@ module.exports = [
                 "text": "1.背景：召唤师",
                 "link": "/C09-玩家角色/9.4魔法之道/6.召唤师Summoner/1.背景：召唤师.md",
                 "collapsed": true
+              },
+              {
+                "text": "2.召唤师的知识与能力",
+                "link": "/C09-玩家角色/9.4魔法之道/6.召唤师Summoner/2.召唤师的知识与能力.md",
+                "collapsed": true
+              },
+              {
+                "text": "职业：召唤师",
+                "link": "/C09-玩家角色/9.4魔法之道/6.召唤师Summoner/职业：召唤师.md",
+                "collapsed": true
               }
             ],
             "collapsed": true
