@@ -968,18 +968,49 @@ module.exports = [
             "text": "2.灵能职业",
             "items": [
               {
-                "text": "1.灵能职业",
-                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/1.灵能职业.md",
+                "text": "1.灵能职业：灵媒",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/1.灵能职业：灵媒.md",
+                "collapsed": true
+              },
+              {
+                "text": "2.灵能职业：灵能治疗师",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/2.灵能职业：灵能治疗师.md",
+                "collapsed": true
+              },
+              {
+                "text": "3.灵能职业：灵能秘术师",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/3.灵能职业：灵能秘术师.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.灵能职业：心灵法师",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/4.灵能职业：心灵法师.md",
+                "collapsed": true
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "3.灵能法表",
+            "items": [
+              {
+                "text": "1.治愈系 Healing",
+                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/1.治愈系 Healing.md",
                 "collapsed": true
               },
               {
                 "text": "2.物理系 Physical",
-                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/2.物理系 Physical.md",
+                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/2.物理系 Physical.md",
                 "collapsed": true
               },
               {
-                "text": "3.治愈系 Healing",
-                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/3.治愈系 Healing.md",
+                "text": "3.感应系 Sensitive",
+                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/3.感应系 Sensitive.md",
+                "collapsed": true
+              },
+              {
+                "text": "4.超级灵能力量",
+                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/4.超级灵能力量.md",
                 "collapsed": true
               }
             ],
