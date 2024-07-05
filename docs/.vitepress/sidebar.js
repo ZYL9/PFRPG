@@ -968,23 +968,23 @@ module.exports = [
             "text": "2.灵能职业",
             "items": [
               {
-                "text": "1.灵能职业：灵媒",
-                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/1.灵能职业：灵媒.md",
+                "text": "1.灵能职业：灵媒Psychic Sensitive",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/1.灵能职业：灵媒Psychic Sensitive.md",
                 "collapsed": true
               },
               {
-                "text": "2.灵能职业：灵能治疗师",
-                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/2.灵能职业：灵能治疗师.md",
+                "text": "2.灵能职业：灵能治疗师Psi-Healer",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/2.灵能职业：灵能治疗师Psi-Healer.md",
                 "collapsed": true
               },
               {
-                "text": "3.灵能职业：灵能秘术师",
-                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/3.灵能职业：灵能秘术师.md",
+                "text": "3.灵能职业：灵能秘术师Psi-Mystic",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/3.灵能职业：灵能秘术师Psi-Mystic.md",
                 "collapsed": true
               },
               {
-                "text": "4.灵能职业：心灵法师",
-                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/4.灵能职业：心灵法师.md",
+                "text": "4.灵能职业：心灵法师Mind Mage",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/4.灵能职业：心灵法师Mind Mage.md",
                 "collapsed": true
               }
             ],
@@ -994,23 +994,23 @@ module.exports = [
             "text": "3.灵能法表",
             "items": [
               {
-                "text": "1.治愈系 Healing",
-                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/1.治愈系 Healing.md",
+                "text": "1.治愈系Healing",
+                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/1.治愈系Healing.md",
                 "collapsed": true
               },
               {
-                "text": "2.物理系 Physical",
-                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/2.物理系 Physical.md",
+                "text": "2.物理系Physical",
+                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/2.物理系Physical.md",
                 "collapsed": true
               },
               {
-                "text": "3.感应系 Sensitive",
-                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/3.感应系 Sensitive.md",
+                "text": "3.感应系Sensitive",
+                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/3.感应系Sensitive.md",
                 "collapsed": true
               },
               {
-                "text": "4.超级灵能力量",
-                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/4.超级灵能力量.md",
+                "text": "4.超能系Super",
+                "link": "/C09-玩家角色/9.5灵能力量/3.灵能法表/4.超能系Super.md",
                 "collapsed": true
               }
             ],
@@ -1027,8 +1027,18 @@ module.exports = [
     "link": "/C10-魔法/C10-魔法.md",
     "items": [
       {
-        "text": "10.1追寻秘法",
-        "link": "/C10-魔法/10.1追寻秘法.md",
+        "text": "10.1魔法如何运行",
+        "link": "/C10-魔法/10.1魔法如何运行.md",
+        "collapsed": true
+      },
+      {
+        "text": "10.2魔法之道",
+        "link": "/C10-魔法/10.2魔法之道.md",
+        "collapsed": true
+      },
+      {
+        "text": "10.3追寻秘法",
+        "link": "/C10-魔法/10.3追寻秘法.md",
         "collapsed": true
       }
     ],
