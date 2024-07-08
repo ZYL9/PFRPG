@@ -834,6 +834,11 @@ module.exports = [
                 "text": "9.雕纹符号及描述",
                 "items": [
                   {
+                    "text": "0.附录：图",
+                    "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/0.附录：图.md",
+                    "collapsed": true
+                  },
+                  {
                     "text": "1.警报",
                     "link": "/C09-玩家角色/9.4魔法之道/7.雕纹魔法/9.雕纹符号及描述/1.警报.md",
                     "collapsed": true
@@ -1039,6 +1044,145 @@ module.exports = [
       {
         "text": "10.3追寻秘法",
         "link": "/C10-魔法/10.3追寻秘法.md",
+        "collapsed": true
+      },
+      {
+        "text": "10.4魔法战斗",
+        "link": "/C10-魔法/10.4魔法战斗.md",
+        "collapsed": true
+      },
+      {
+        "text": "10.5法表",
+        "link": "/C10-魔法/10.5法表/10.5法表.md",
+        "items": [
+          {
+            "text": "01.一级",
+            "link": "/C10-魔法/10.5法表/01.一级.md",
+            "collapsed": true
+          },
+          {
+            "text": "02.二级",
+            "link": "/C10-魔法/10.5法表/02.二级.md",
+            "collapsed": true
+          },
+          {
+            "text": "03.三级",
+            "link": "/C10-魔法/10.5法表/03.三级.md",
+            "collapsed": true
+          },
+          {
+            "text": "04.四级",
+            "link": "/C10-魔法/10.5法表/04.四级.md",
+            "collapsed": true
+          },
+          {
+            "text": "05.五级",
+            "link": "/C10-魔法/10.5法表/05.五级.md",
+            "collapsed": true
+          },
+          {
+            "text": "06.六级",
+            "link": "/C10-魔法/10.5法表/06.六级.md",
+            "collapsed": true
+          },
+          {
+            "text": "07.七级",
+            "link": "/C10-魔法/10.5法表/07.七级.md",
+            "collapsed": true
+          },
+          {
+            "text": "08.八级",
+            "link": "/C10-魔法/10.5法表/08.八级.md",
+            "collapsed": true
+          },
+          {
+            "text": "09.九级",
+            "link": "/C10-魔法/10.5法表/09.九级.md",
+            "collapsed": true
+          },
+          {
+            "text": "10.十级",
+            "link": "/C10-魔法/10.5法表/10.十级.md",
+            "collapsed": true
+          },
+          {
+            "text": "11.十一级",
+            "link": "/C10-魔法/10.5法表/11.十一级.md",
+            "collapsed": true
+          },
+          {
+            "text": "12.十二级",
+            "link": "/C10-魔法/10.5法表/12.十二级.md",
+            "collapsed": true
+          },
+          {
+            "text": "13.十三级",
+            "link": "/C10-魔法/10.5法表/13.十三级.md",
+            "collapsed": true
+          },
+          {
+            "text": "14.十四级",
+            "link": "/C10-魔法/10.5法表/14.十四级.md",
+            "collapsed": true
+          },
+          {
+            "text": "15.十五级",
+            "link": "/C10-魔法/10.5法表/15.十五级.md",
+            "collapsed": true
+          },
+          {
+            "text": "16.传说级",
+            "link": "/C10-魔法/10.5法表/16.传说级.md",
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "10.6元素法表",
+        "link": "/C10-魔法/10.6元素法表/10.6元素法表.md",
+        "items": [
+          {
+            "text": "01.一级",
+            "link": "/C10-魔法/10.6元素法表/01.一级.md",
+            "collapsed": true
+          },
+          {
+            "text": "02.二级",
+            "link": "/C10-魔法/10.6元素法表/02.二级.md",
+            "collapsed": true
+          },
+          {
+            "text": "03.三级",
+            "link": "/C10-魔法/10.6元素法表/03.三级.md",
+            "collapsed": true
+          },
+          {
+            "text": "04.四级",
+            "link": "/C10-魔法/10.6元素法表/04.四级.md",
+            "collapsed": true
+          },
+          {
+            "text": "05.五级",
+            "link": "/C10-魔法/10.6元素法表/05.五级.md",
+            "collapsed": true
+          },
+          {
+            "text": "06.六级",
+            "link": "/C10-魔法/10.6元素法表/06.六级.md",
+            "collapsed": true
+          },
+          {
+            "text": "07.七级",
+            "link": "/C10-魔法/10.6元素法表/07.七级.md",
+            "collapsed": true
+          },
+          {
+            "text": "08.八级",
+            "link": "/C10-魔法/10.6元素法表/08.八级.md",
+            "collapsed": true
+          }
+        ],
         "collapsed": true
       }
     ],
