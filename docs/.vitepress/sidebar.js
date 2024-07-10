@@ -499,18 +499,20 @@ module.exports = [
                 "collapsed": true
               },
               {
-                "text": "2.1盗贼行会-销赃",
-                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.1盗贼行会-销赃.md",
-                "collapsed": true
-              },
-              {
-                "text": "2.2盗贼行会-服务",
-                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.2盗贼行会-服务.md",
-                "collapsed": true
-              },
-              {
                 "text": "2.盗贼行会",
-                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.盗贼行会.md",
+                "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.盗贼行会/2.盗贼行会.md",
+                "items": [
+                  {
+                    "text": "2.1盗贼行会-销赃",
+                    "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.盗贼行会/2.1盗贼行会-销赃.md",
+                    "collapsed": true
+                  },
+                  {
+                    "text": "2.2盗贼行会-服务",
+                    "link": "/C09-玩家角色/9.2武装人员/7.盗贼/2.盗贼行会/2.2盗贼行会-服务.md",
+                    "collapsed": true
+                  }
+                ],
                 "collapsed": true
               },
               {
@@ -978,8 +980,8 @@ module.exports = [
                 "collapsed": true
               },
               {
-                "text": "2.灵能职业：灵能治疗师Psi-Healer",
-                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/2.灵能职业：灵能治疗师Psi-Healer.md",
+                "text": "2.灵能职业：灵疗师Psi-Healer",
+                "link": "/C09-玩家角色/9.5灵能力量/2.灵能职业/2.灵能职业：灵疗师Psi-Healer.md",
                 "collapsed": true
               },
               {
@@ -1195,16 +1197,15 @@ module.exports = [
   },
   {
     "text": "C12-钯金世界",
-    "link": "/C12-钯金世界/C12-钯金世界.md",
     "items": [
       {
-        "text": "12.1世界概览",
-        "link": "/C12-钯金世界/12.1世界概览.md",
+        "text": "12.1钯金世界时间线",
+        "link": "/C12-钯金世界/12.1钯金世界时间线.md",
         "collapsed": true
       },
       {
-        "text": "12.2玩家种族",
-        "link": "/C12-钯金世界/12.2玩家种族.md",
+        "text": "12.3玩家种族",
+        "link": "/C12-钯金世界/12.3玩家种族.md",
         "collapsed": true
       }
     ],

@@ -1,5 +1,6 @@
 const path = require('path');
-const fs = require('fs-extra')
+const fs = require('fs-extra');
+const { default: natsort } = require('natsort');
 
 // Function to check if a directory contains any markdown files
 function containsMarkdownFiles(dir) {
@@ -14,7 +15,9 @@ function containsMarkdownFiles(dir) {
 function generateStructure(dir) {
     const result = [];
 
-    const files = fs.readdirSync(dir);
+    const filesraw = fs.readdirSync(dir);
+
+    const files = filesraw.sort(natsort())
 
     files.forEach(file => {
         const filePath = path.join(dir, file);
