@@ -2,19 +2,27 @@
   "devDependencies": {
     "@vite-pwa/vitepress": "^0.5.0",
     "@vitejs/plugin-vue": "^4.5.0",
+    "flexsearch": "^0.7.43",
     "fs-extra": "^11.2.0",
-    "natsort": "^2.0.3",
+    "segment": "^0.1.3",
+    "vite-plugin-chunk-split": "^0.5.0",
     "vite-plugin-pwa": "^0.20.0",
     "vitepress": "^1.2.3",
-    "vitepress-export-pdf": "^1.0.0",
+    "vitepress-plugin-search": "1.0.4-alpha.22",
     "vue": "^3.4.30",
     "workbox-window": "^7.1.0"
   },
+  "//devDependencies": {
+    "vitepress-export-pdf": "^1.0.0"
+  },
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "prebuild": "node generate-sidebar.js",
+    "prebuild": "node generate-sidebar.js"
+  },
+  "//scripts": {
     "export-pdf": "press-export-pdf export /docs"
   }
 }

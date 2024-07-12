@@ -1,6 +1,37 @@
 import { defineConfig } from "vitepress";
 import { withPwa } from "@vite-pwa/vitepress";
-import sidebar from "./sidebar";
+import { SearchPlugin } from "vitepress-plugin-search";
+import { chunkSplitPlugin } from 'vite-plugin-chunk-split';
+
+import { sidebarData } from "./sidebar.js";
+
+// 载入模块
+// var Segment = require('segment');
+import Segment from 'segment'
+// 创建实例
+var segment = new Segment();
+// 使用默认的识别模块及字典，载入字典文件需要1秒，仅初始化时执行一次即可
+segment.useDefault();
+
+var options = {
+
+  // 采用分词器优化，
+  encode: function (str) {
+    return segment.doSegment(str, { simple: true });
+  },
+  tokenize: "foward",
+  // // 解决汉字搜索问题。来源：https://github.com/emersonbottero/vitepress-plugin-search/issues/11
+
+
+  // 以下代码返回完美的结果，但内存与空间消耗巨大，索引文件达到80M+
+  // encode: false,
+  // tokenize: "full",
+
+  // encode: false,
+  // tokenize: function (str) {
+  //   return segment.doSegment(str, { simple: true });
+  // }
+};
 
 // https://vitepress.dev/reference/site-config
 export default withPwa(
@@ -21,14 +52,23 @@ export default withPwa(
       outline: {
         level: [1, 3],
       },
-      search: {
-        provider: "local",
-      },
+      // search: {
+      //   provider: "local",
+      // },
       editLink: {
         pattern: "https://github.com/ZYL9/PFRPG/edit/main/docs/:path",
         text: "Edit this page on GitHub",
       },
-      sidebar,
+      sidebar: sidebarData,
+    },
+    ignoreDeadLinks: true,
+    metaChunk: true,
+    lang: "zh-cn",
+    vite: {
+      plugins: [
+        SearchPlugin(options),
+        chunkSplitPlugin()
+      ],
     },
     pwa: {
       includeAssets: ["favicon.ico"],
