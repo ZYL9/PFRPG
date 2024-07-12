@@ -1,6 +1,12 @@
-const path = require('path');
-const fs = require('fs-extra');
-const { default: natsort } = require('natsort');
+import path from 'path';
+import fs from 'fs-extra'
+
+import { dirname } from "node:path"
+import { fileURLToPath } from "node:url"
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 
 // Function to check if a directory contains any markdown files
 function containsMarkdownFiles(dir) {
@@ -17,7 +23,9 @@ function generateStructure(dir) {
 
     const filesraw = fs.readdirSync(dir);
 
-    const files = filesraw.sort(natsort())
+    var collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
+
+    const files = filesraw.sort(collator.compare)
 
     files.forEach(file => {
         const filePath = path.join(dir, file);
@@ -59,7 +67,7 @@ function main() {
     const sidebarFile = path.join(__dirname, 'docs/.vitepress/sidebar.js');
     const structure = generateStructure(docsRoot);
 
-    const output = `module.exports = ${JSON.stringify(structure, null, 2)};`;
+    const output = `export const sidebarData  = ${JSON.stringify(structure, null, 2)};`;
     fs.writeFileSync(sidebarFile, output);
 }
 

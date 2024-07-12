@@ -1,4 +1,4 @@
-module.exports = [
+export const sidebarData  = [
   {
     "text": "0.关于",
     "link": "/0.关于.md",
