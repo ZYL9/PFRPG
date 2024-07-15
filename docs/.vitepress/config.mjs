@@ -37,7 +37,7 @@ var options = {
 export default withPwa(
   defineConfig({
     title: "钯界传奇",
-    head: [["link", { rel: "icon", href: "favicon.ico" }]],
+    head: [["link", { rel: "icon", href: "/favicon.ico" }]],
     description: "Palladium Fantasy",
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
