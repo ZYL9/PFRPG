@@ -19,5 +19,6 @@ TODOs.md
 *.chm
 *.chw
 output_markdown
-docs/public/c09/*.png
-docs/C09-玩家角色/**/*.png
+
+*.png
+*.jpg

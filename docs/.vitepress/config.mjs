@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 import { withPwa } from "@vite-pwa/vitepress";
 import { SearchPlugin } from "vitepress-plugin-search";
 import { chunkSplitPlugin } from 'vite-plugin-chunk-split';
+import viteCompression from 'vite-plugin-compression';
 
 import { sidebarData } from "./sidebar.js";
 
@@ -13,25 +14,34 @@ var segment = new Segment();
 // 使用默认的识别模块及字典，载入字典文件需要1秒，仅初始化时执行一次即可
 segment.useDefault();
 
-var options = {
+var searchOptions = {
 
-  // 采用分词器优化，
+  //采用分词器优化，解决汉字搜索问题。效果和大小折中
+  //来源：https://github.com/emersonbottero/vitepress-plugin-search/issues/11
   encode: function (str) {
     return segment.doSegment(str, { simple: true });
   },
   tokenize: "foward",
-  // // 解决汉字搜索问题。来源：https://github.com/emersonbottero/vitepress-plugin-search/issues/11
 
-
-  // 以下代码返回完美的结果，但内存与空间消耗巨大，索引文件达到80M+
+  // 以下代码返回完美的结果，但内存与空间消耗巨大
   // encode: false,
   // tokenize: "full",
 
+  //官方推荐方法，不是很理想，留作备用
   // encode: false,
   // tokenize: function (str) {
   //   return segment.doSegment(str, { simple: true });
   // }
+  // encode: str => str.replace(/[\x00-\x7F]/g, "").split("")
 };
+
+var compressOptions = {
+  verbose: true,
+  disable: false,
+  threshold: 1024,
+  algorithm: "brotliCompress",
+  ext: ".br",
+}
 
 // https://vitepress.dev/reference/site-config
 export default withPwa(
@@ -41,7 +51,7 @@ export default withPwa(
     description: "Palladium Fantasy",
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
-      logo: "/logo.png",
+      logo: "/logo.webp",
       nav: [
         { text: "Home", link: "/" },
         { text: "Docs", link: "/C01-创建角色/1.1第一步：八属性与属性加值.md" },
@@ -61,13 +71,21 @@ export default withPwa(
       },
       sidebar: sidebarData,
     },
+    markdown: {
+      image: {
+        // 图片懒加载
+        lazyLoading: true
+      }
+    },
     ignoreDeadLinks: true,
     metaChunk: true,
     lang: "zh-cn",
     vite: {
       plugins: [
-        SearchPlugin(options),
-        chunkSplitPlugin()
+        SearchPlugin(searchOptions),
+        chunkSplitPlugin(),
+        // viteCompression(compressOptions)//用于压缩，cfpages已经自动用了，如果自己部署需要打开
+
       ],
     },
     pwa: {
@@ -82,14 +100,14 @@ export default withPwa(
         theme_color: "#ffffff",
         icons: [
           {
-            src: "logo192.png",
+            src: "logo192.webp",
             sizes: "192x192",
-            type: "image/png",
+            type: "image/webp",
           },
           {
-            src: "logo512.png",
+            src: "logo512.webp",
             sizes: "512x512",
-            type: "image/png",
+            type: "image/webp",
           },
         ],
       },
