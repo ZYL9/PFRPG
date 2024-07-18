@@ -7,7 +7,7 @@ hero:
   text: ""
   tagline: Palladium Fantasy
   image: 
-    src: /cover.jpg
+    src: /cover.webp
     alt: 假装有封面
   actions:
     - theme: brand
