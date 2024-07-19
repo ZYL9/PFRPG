@@ -85,6 +85,6 @@ breath without air
 
 感知陷阱 sense traps
 
-心灵致动术 telekinesis
+念力 telekinesis
 
 元素魔法
