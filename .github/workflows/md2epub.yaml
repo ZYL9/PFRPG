@@ -1,0 +1,51 @@
+name: Convert Markdown to EPUB
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'  # Trigger workflow on version tags like v1.0.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install markdown2
+        pip install ebooklib
+
+    - name: Convert Markdown to EPUB
+      run: |
+        python convert_to_epub.py
+
+    - name: Create GitHub Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          This release contains the latest EPUB files converted from Markdown.
+        draft: false
+        prerelease: false
+
+    - name: Upload EPUB files to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./epubs/*.epub
+        asset_name: ${{ github.ref }}.epub
+        asset_content_type: application/epub+zip
