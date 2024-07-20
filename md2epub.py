@@ -16,26 +16,26 @@ def remove_yaml_front_matter(content):
 
 
 def adjust_heading_levels(content, level_offset):
-    lines = content.split('\n')
+    lines = content.split("\n")
     adjusted_lines = []
     for line in lines:
-        if line.startswith('#'):
+        if line.startswith("#"):
             # Count the number of leading '#' characters
             heading_level = 0
-            while heading_level < len(line) and line[heading_level] == '#':
+            while heading_level < len(line) and line[heading_level] == "#":
                 heading_level += 1
             # Adjust the heading level
             new_level = heading_level + level_offset
             if new_level > 6:
                 # Convert to bold text if heading level exceeds 6
                 bold_text = line[heading_level:].strip()
-                adjusted_lines.append(f'**{bold_text}**')
+                adjusted_lines.append(f"**{bold_text}**")
             else:
-                adjusted_heading = '#' * new_level + line[heading_level:]
+                adjusted_heading = "#" * new_level + line[heading_level:]
                 adjusted_lines.append(adjusted_heading)
         else:
             adjusted_lines.append(line)
-    return '\n'.join(adjusted_lines)
+    return "\n".join(adjusted_lines)
 
 
 def combine_markdown_files(root_dir):
@@ -43,13 +43,13 @@ def combine_markdown_files(root_dir):
 
     for current_path, dirs, files in os.walk(root_dir):
         # Sort files to ensure index.md is processed first if present
-        files = sorted(files, key=lambda f: (f != 'index.md', f))
-        level_offset = current_path[len(root_dir):].count(os.sep)
+        files = sorted(files, key=lambda f: (f != "index.md", f))
+        level_offset = current_path[len(root_dir) :].count(os.sep)
 
         # Process index.md first if it exists in the directory
-        if 'index.md' in files:
-            index_path = os.path.join(current_path, 'index.md')
-            with open(index_path, 'r', encoding='utf-8') as f:
+        if "index.md" in files:
+            index_path = os.path.join(current_path, "index.md")
+            with open(index_path, "r", encoding="utf-8") as f:
                 content = f.read()
                 content = remove_yaml_front_matter(content)
                 if len(content) > 0:
@@ -57,33 +57,39 @@ def combine_markdown_files(root_dir):
                     combined_content.append("<hr>")
                     combined_content.append(adjusted_content)
                     combined_content.append("<hr>")
-                    combined_content.append("<div STYLE=\"page-break-after: always;\"></div>")
+                    combined_content.append(
+                        '<div STYLE="page-break-after: always;"></div>'
+                    )
 
         # Process other markdown files
         for file in files:
-            if file != 'index.md' and file.endswith('.md'):
+            if file != "index.md" and file.endswith(".md"):
                 file_path = os.path.join(current_path, file)
-                with open(file_path, 'r', encoding='utf-8') as f:
+                with open(file_path, "r", encoding="utf-8") as f:
                     content = f.read()
                     content = remove_yaml_front_matter(content)
                     adjusted_content = adjust_heading_levels(content, level_offset)
                     combined_content.append("<hr>")
                     combined_content.append(adjusted_content)
                     combined_content.append("<hr>")
-                    combined_content.append("<div STYLE=\"page-break-after: always;\"></div>")
+                    combined_content.append(
+                        '<div STYLE="page-break-after: always;"></div>'
+                    )
 
-    return '\n'.join(combined_content)
+    return "\n".join(combined_content)
 
 
 def copy_assets_epub(src_dir, epub_book):
     asset_id = 1
     for current_path, dirs, files in os.walk(src_dir):
         for file in files:
-            if file.endswith('.webp'):
-                image_content = open(os.path.join(current_path, file), 'rb').read()
-                img = epub.EpubImage(uid=f'image_{asset_id}',
-                                     file_name='./assets/' + file,
-                                     content=image_content)
+            if file.endswith(".webp"):
+                image_content = open(os.path.join(current_path, file), "rb").read()
+                img = epub.EpubImage(
+                    uid=f"image_{asset_id}",
+                    file_name="./assets/" + file,
+                    content=image_content,
+                )
                 asset_id = asset_id + 1
                 epub_book.add_item(img)
     print(f"Total {asset_id} image added")
@@ -98,8 +104,8 @@ def md2epub(docs_root, output_epub):
 
     text = combine_markdown_files(docs_root)
     html_content = markdown2.markdown(text, extras=["tables"])
-    with open("./epubs/raw.html", "w", encoding='utf-8') as f:
-        f.write(html_content)
+    # with open("./epubs/raw.html", "w", encoding='utf-8') as f:
+    #     f.write(html_content)
     print("Md2Html finished")
     chapter = epub.EpubHtml(
         title="Palladium_Fantasy_zh_Hans",
@@ -120,6 +126,6 @@ def md2epub(docs_root, output_epub):
 
 if __name__ == "__main__":
     root_directory = "./docs"  # Replace with your root directory
-    output_epub_file = "./epubs/Palladium_Fantasy_zh_Hans.epub"
+    output_epub_file = "./Palladium_Fantasy_zh_Hans.epub"
 
     md2epub(root_directory, output_epub_file)
