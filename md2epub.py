@@ -42,39 +42,53 @@ def combine_markdown_files(root_dir):
     combined_content = []
 
     for current_path, dirs, files in os.walk(root_dir):
-        # Sort files to ensure index.md is processed first if present
-        files = sorted(files, key=lambda f: (f != "index.md", f))
-        level_offset = current_path[len(root_dir) :].count(os.sep)
+        normalized_path = os.path.normpath(current_path)
+        if ".vitepress" not in normalized_path.split(
+            os.sep
+        ) and "public" not in normalized_path.split(os.sep):
+            # Sort files to ensure index.md is processed first if present
+            def atoi(text):
+                return int(text) if text.isdigit() else text
 
-        # Process index.md first if it exists in the directory
-        if "index.md" in files:
-            index_path = os.path.join(current_path, "index.md")
-            with open(index_path, "r", encoding="utf-8") as f:
-                content = f.read()
-                content = remove_yaml_front_matter(content)
-                if len(content) > 0:
-                    adjusted_content = adjust_heading_levels(content, level_offset - 1)
-                    combined_content.append("<hr>")
-                    combined_content.append(adjusted_content)
-                    combined_content.append("<hr>")
-                    combined_content.append(
-                        '<div STYLE="page-break-after: always;"></div>'
-                    )
+            def natural_keys(text):
+                """
+                alist.sort(key=natural_keys) sorts in human order
+                http://nedbatchelder.com/blog/200712/human_sorting.html
+                (See Toothy's implementation in the comments)
+                """
+                return [atoi(c) for c in re.split(r"(\d+)", text)]
 
-        # Process other markdown files
-        for file in files:
-            if file != "index.md" and file.endswith(".md"):
-                file_path = os.path.join(current_path, file)
-                with open(file_path, "r", encoding="utf-8") as f:
+            files = sorted(files, key=natural_keys)
+
+            level_offset = current_path[len(root_dir) :].count(os.sep)
+
+            # Process index.md first if it exists in the directory
+            if "index.md" in files:
+                index_path = os.path.join(current_path, "index.md")
+                with open(index_path, "r", encoding="utf-8") as f:
                     content = f.read()
                     content = remove_yaml_front_matter(content)
-                    adjusted_content = adjust_heading_levels(content, level_offset)
-                    combined_content.append("<hr>")
-                    combined_content.append(adjusted_content)
-                    combined_content.append("<hr>")
-                    combined_content.append(
-                        '<div STYLE="page-break-after: always;"></div>'
-                    )
+                    if len(content) > 0:
+                        adjusted_content = adjust_heading_levels(
+                            content, level_offset - 1
+                        )
+                        combined_content.append(adjusted_content)
+                        combined_content.append(
+                            '<div STYLE="page-break-after: always;"></div>'
+                        )
+
+            # Process other markdown files
+            for file in files:
+                if file != "index.md" and file.endswith(".md"):
+                    file_path = os.path.join(current_path, file)
+                    with open(file_path, "r", encoding="utf-8") as f:
+                        content = f.read()
+                        content = remove_yaml_front_matter(content)
+                        adjusted_content = adjust_heading_levels(content, level_offset)
+                        combined_content.append(adjusted_content)
+                        combined_content.append(
+                            '<div STYLE="page-break-after: always;"></div>'
+                        )
 
     return "\n".join(combined_content)
 
