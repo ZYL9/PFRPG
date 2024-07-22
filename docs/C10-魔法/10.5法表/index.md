@@ -9,7 +9,7 @@ title: "法表"
 
 烟雾术 cloud of smoke
 
-假死术 death trance
+死亡恍惚 death trance
 
 辨识魔法 decipher magic
 
@@ -17,7 +17,7 @@ title: "法表"
 
 增重术 increase weight
 
-看破灵光 see aura
+看破气场 see aura
 
 看破隐形 see the invisible
 
@@ -31,7 +31,7 @@ title: "法表"
 
 ## 2级
 
-昏迷术 befuddle
+糊涂术 befuddle
 
 chameleon
 
