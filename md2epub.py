@@ -38,6 +38,19 @@ def adjust_heading_levels(content, level_offset):
     return "\n".join(adjusted_lines)
 
 
+def atoi(text):
+    return int(text) if text.isdigit() else text
+
+
+def natural_keys(text):
+    """
+    alist.sort(key=natural_keys) sorts in human order
+    http://nedbatchelder.com/blog/200712/human_sorting.html
+    (See Toothy's implementation in the comments)
+    """
+    return [atoi(c) for c in re.split(r"(\d+)", text)]
+
+
 def combine_markdown_files(root_dir):
     combined_content = []
 
@@ -47,16 +60,6 @@ def combine_markdown_files(root_dir):
             os.sep
         ) and "public" not in normalized_path.split(os.sep):
             # Sort files to ensure index.md is processed first if present
-            def atoi(text):
-                return int(text) if text.isdigit() else text
-
-            def natural_keys(text):
-                """
-                alist.sort(key=natural_keys) sorts in human order
-                http://nedbatchelder.com/blog/200712/human_sorting.html
-                (See Toothy's implementation in the comments)
-                """
-                return [atoi(c) for c in re.split(r"(\d+)", text)]
 
             files = sorted(files, key=natural_keys)
 
@@ -109,6 +112,40 @@ def copy_assets_epub(src_dir, epub_book):
     print(f"Total {asset_id} image added")
 
 
+def split_markdown_by_headings(source_file, dest_dir="./temp"):
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
+
+    current_title = None
+    current_content = []
+
+    with open(source_file, "r", encoding="utf-8") as file:
+        for line in file:
+            line = line.strip()
+
+            if line.startswith("# "):
+
+                if current_title is not None and current_content:
+                    save_content(current_title, current_content, dest_dir)
+
+                current_title = line[2:].strip()
+                current_content = []
+                current_content.append(line)
+
+            else:
+                current_content.append(line)
+
+    if current_title is not None and current_content:
+        save_content(current_title, current_content, dest_dir)
+
+
+def save_content(title, content, dest_dir):
+    file_path = os.path.join(dest_dir, f"{title}.md")
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.write("\n".join(content) + "\n")
+    print(f"Saved '{title}.md'")
+
+
 def md2epub(docs_root, output_epub):
     epub_book = epub.EpubBook()
     epub_book.set_title("Palladium_Fantasy_zh_Hans")
@@ -116,22 +153,44 @@ def md2epub(docs_root, output_epub):
     epub_book.add_author("Author Name")
     epub_book.set_cover("cover.webp", open("./docs/public/cover.webp", "rb").read())
 
-    text = combine_markdown_files(docs_root)
-    html_content = markdown2.markdown(text, extras=["tables"])
-    # with open("./epubs/raw.html", "w", encoding='utf-8') as f:
-    #     f.write(html_content)
-    print("Md2Html finished")
-    chapter = epub.EpubHtml(
-        title="Palladium_Fantasy_zh_Hans",
-        file_name=f"full.xhtml",
-        content=html_content,
-    )
-    epub_book.add_item(chapter)
-    print("Text added")
+    spine = ["nav"]
 
+    text = combine_markdown_files(docs_root)
+
+    temp_dir = "./epubs"
+    if not os.path.exists(temp_dir):
+        os.makedirs(temp_dir)
+    with open(os.path.join(temp_dir, "comb.md"), "w", encoding="utf-8") as f:
+        f.write(text)
+    split_markdown_by_headings(os.path.join(temp_dir, "comb.md"), temp_dir)
+    temp_files = os.listdir(temp_dir)
+    temp_files.sort(key=natural_keys)
+    i = 1
+    for file in temp_files:
+        if file != "comb.md" and file.endswith(".md"):
+            with open(os.path.join(temp_dir, file), "r", encoding="utf-8") as f:
+                content = f.read()
+                html_content = markdown2.markdown(content, extras=["tables"])
+                # with open("./epubs/{file}.html", "w", encoding='utf-8') as f:
+                #     f.write(html_content)
+                print(f"{file} Md2Html finished")
+                chapter = epub.EpubHtml(
+                    title=f"{os.path.splitext(file)[0]}",
+                    file_name=f"chap_{i}.xhtml",
+                    content=html_content,
+                )
+                i += 1
+                epub_book.add_item(chapter)
+                epub_book.toc.append(chapter)
+                spine.append(chapter)
+                print(f"{file} added")
+
+    for file in temp_files:
+        if file.endswith(".md"):
+            os.remove(os.path.join(temp_dir, file))
     copy_assets_epub("./docs", epub_book)
 
-    epub_book.spine = ["nav", chapter]
+    epub_book.spine = spine
     epub_book.add_item(epub.EpubNcx())
     epub_book.add_item(epub.EpubNav())
     epub.write_epub(output_epub, epub_book)
