@@ -3,6 +3,7 @@ import shutil
 import re
 import markdown2
 from ebooklib import epub
+from bs4 import BeautifulSoup
 
 
 def remove_yaml_front_matter(content):
@@ -77,7 +78,7 @@ def combine_markdown_files(root_dir):
                         )
                         combined_content.append(adjusted_content)
                         combined_content.append(
-                            '<div STYLE="page-break-after: always;"></div>'
+                            '<div STYLE="page-break-after: always;"></div>\n'
                         )
 
             # Process other markdown files
@@ -90,7 +91,7 @@ def combine_markdown_files(root_dir):
                         adjusted_content = adjust_heading_levels(content, level_offset)
                         combined_content.append(adjusted_content)
                         combined_content.append(
-                            '<div STYLE="page-break-after: always;"></div>'
+                            '<div STYLE="page-break-after: always;"></div>\n'
                         )
 
     return "\n".join(combined_content)
@@ -99,16 +100,20 @@ def combine_markdown_files(root_dir):
 def copy_assets_epub(src_dir, epub_book):
     asset_id = 1
     for current_path, dirs, files in os.walk(src_dir):
-        for file in files:
-            if file.endswith(".webp"):
-                image_content = open(os.path.join(current_path, file), "rb").read()
-                img = epub.EpubImage(
-                    uid=f"image_{asset_id}",
-                    file_name="./assets/" + file,
-                    content=image_content,
-                )
-                asset_id = asset_id + 1
-                epub_book.add_item(img)
+        normalized_path = os.path.normpath(current_path)
+        if ".vitepress" not in normalized_path.split(
+            os.sep
+        ) and "public" not in normalized_path.split(os.sep):
+            for file in files:
+                if file.endswith(".webp"):
+                    image_content = open(os.path.join(current_path, file), "rb").read()
+                    img = epub.EpubImage(
+                        uid=f"image_{asset_id}",
+                        file_name="./assets/" + file,
+                        content=image_content,
+                    )
+                    asset_id = asset_id + 1
+                    epub_book.add_item(img)
     print(f"Total {asset_id} image added")
 
 
@@ -146,6 +151,98 @@ def save_content(title, content, dest_dir):
     print(f"Saved '{title}.md'")
 
 
+def process_headers(soup, i):
+    top_level_ol = soup.new_tag("ol")
+
+    def create_nav(headers, parent_ol, chap_id):
+        current_j = 1
+        last_level = 1
+        last_li = None
+        last_ol = parent_ol
+
+        for header in headers:
+            tag_name = header.name
+            level = int(tag_name[1])
+            title = header.text.strip()
+
+            if level == 1:
+                header["id"] = f"chap_{chap_id}.xhtml"
+                li = soup.new_tag("li")
+                a = soup.new_tag("a", href=f"chap_{chap_id}.xhtml")
+                a.string = title
+                li.append(a)
+                # Directly append to the top-level list
+                top_level_ol.append(li)
+                last_li = li
+                last_ol = soup.new_tag("ol")
+                li.append(last_ol)
+                chap_id += 1
+            else:
+                header["id"] = f"chap_{chap_id - 1}.xhtml#toc_id_{current_j}"
+                current_j += 1
+                li = soup.new_tag("li")
+                a = soup.new_tag("a", href=header["id"])
+                a.string = title
+                li.append(a)
+
+                if level > last_level:
+                    new_ol = soup.new_tag("ol")
+                    last_li.append(new_ol)
+                    new_ol.append(li)
+                    last_ol = new_ol
+                elif level == last_level:
+                    last_ol.append(li)
+                else:
+                    diff = last_level - level
+                    for _ in range(diff):
+                        if last_ol and last_ol.parent and last_ol.parent.name == "li":
+                            last_ol = last_ol.parent.parent
+                        else:
+                            break
+                    if last_ol:
+                        last_ol.append(li)
+
+                last_li = li
+                last_level = level
+
+    def remove_empty_ols(element):
+        for ol in element.find_all("ol", recursive=False):
+            if not ol.contents:
+                ol.decompose()  # Remove empty <ol>
+            else:
+                remove_empty_ols(ol)  # Recurse into nested <ol>
+
+    headers = soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6"])
+    create_nav(headers, None, i)
+    remove_empty_ols(top_level_ol)
+    return top_level_ol.contents
+
+
+def generate_nav_xhtml(nav_list):
+    prefix = """<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-Hans" xml:lang="zh-Hans">
+<head>
+  <title>Palladium_Fantasy_zh_Hans</title>
+  <meta charset="utf-8"/>
+</head>
+
+<body epub:type="frontmatter">
+  <nav epub:type="toc" id="toc" role="doc-toc">
+    <h1>目录</h1>
+    <ol> 
+    """
+
+    suffix = """  
+    </ol>  
+  </nav>
+</body>
+</html>
+"""
+    return prefix + nav_list.prettify() + suffix
+
+
 def md2epub(docs_root, output_epub):
     epub_book = epub.EpubBook()
     epub_book.set_title("Palladium_Fantasy_zh_Hans")
@@ -154,6 +251,8 @@ def md2epub(docs_root, output_epub):
     epub_book.set_cover("cover.webp", open("./docs/public/cover.webp", "rb").read())
 
     spine = ["nav"]
+
+    nav_full = BeautifulSoup("", "html.parser")
 
     text = combine_markdown_files(docs_root)
 
@@ -170,14 +269,20 @@ def md2epub(docs_root, output_epub):
         if file != "comb.md" and file.endswith(".md"):
             with open(os.path.join(temp_dir, file), "r", encoding="utf-8") as f:
                 content = f.read()
+                # md转html
                 html_content = markdown2.markdown(content, extras=["tables"])
+                # 加目录ID
+                soup = BeautifulSoup(html_content, "html.parser")
+                html_nav = process_headers(soup, i)
+                for data in html_nav:
+                    nav_full.append(data)
                 # with open("./epubs/{file}.html", "w", encoding='utf-8') as f:
                 #     f.write(html_content)
                 print(f"{file} Md2Html finished")
                 chapter = epub.EpubHtml(
                     title=f"{os.path.splitext(file)[0]}",
                     file_name=f"chap_{i}.xhtml",
-                    content=html_content,
+                    content=soup.prettify(),
                 )
                 i += 1
                 epub_book.add_item(chapter)
@@ -190,9 +295,22 @@ def md2epub(docs_root, output_epub):
             os.remove(os.path.join(temp_dir, file))
     copy_assets_epub("./docs", epub_book)
 
+    epub_nav_content = generate_nav_xhtml(nav_full)
+    with open("./epubs/nav.xml", "w", encoding="utf-8") as f:
+        f.write(epub_nav_content)
+    epub_book.add_item(
+        epub.EpubHtml(
+            uid="nav",
+            title="nav",
+            file_name="nav.xhtml",
+            content=epub_nav_content,
+            media_type="application/xhtml+xml",
+        )
+    )
+
     epub_book.spine = spine
-    epub_book.add_item(epub.EpubNcx())
-    epub_book.add_item(epub.EpubNav())
+    # epub_book.add_item(epub.EpubNcx())
+    # epub_book.add_item(epub.EpubNav())
     epub.write_epub(output_epub, epub_book)
     print("Epub generated!")
 
