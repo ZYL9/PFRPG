@@ -45,15 +45,61 @@ import { generateSidebar } from 'vitepress-sidebar';
 //   algorithm: "brotliCompress",
 //   ext: ".br",
 // }
-const vitepressSidebarOptions =
+const vitepressSidebarOptions_MAIN =
 {
   /*
    * For detailed instructions, see the links below:
    * https://vitepress-sidebar.jooy2.com/guide/api
    */
   documentRootPath: '/docs',
-  // scanStartPath: null,
-  // resolvePath: null,
+  scanStartPath: 'Main',
+  resolvePath: '/Main/',
+  // useTitleFromFileHeading: true,
+  useTitleFromFrontmatter: true,
+  // frontmatterTitleFieldName: 'title',
+  // useFolderTitleFromIndexFile: false,
+  useFolderLinkFromIndexFile: true,
+  // hyphenToSpace: true,
+  // underscoreToSpace: true,
+  // capitalizeFirst: false,
+  // capitalizeEachWords: false,
+  collapsed: true,
+  // collapseDepth: 2,
+  // sortMenusByName: false,
+  // sortMenusByFrontmatterOrder: false,
+  // sortMenusByFrontmatterDate: false,
+  // sortMenusOrderByDescending: false,
+  // sortMenusOrderNumericallyFromTitle: true,
+  sortMenusOrderNumericallyFromLink: true,
+  // frontmatterOrderDefaultValue: 0,
+  // manualSortFileNameByPriority: ['first.md', 'second', 'third.md'],
+  // removePrefixAfterOrdering: false,
+  // prefixSeparator: '.',
+  // excludeFiles: ['first.md', 'secret.md'],
+  excludeFilesByFrontmatterFieldName: 'exclude',
+  // excludeFolders: ['secret-folder'],
+  // includeDotFiles: false,
+  // includeRootIndexFile: false,
+  // includeFolderIndexFile: false,
+  // includeEmptyFolder: false,
+  // rootGroupText: 'Contents',
+  // rootGroupLink: 'https://github.com/jooy2',
+  // rootGroupCollapsed: false,
+  // convertSameNameSubFileToGroupIndexPage: false,
+  // folderLinkNotIncludesFileName: false,
+  // keepMarkdownSyntaxFromTitle: false,
+  // debugPrint: false,
+}
+
+const vitepressSidebarOptions_DLC =
+{
+  /*
+   * For detailed instructions, see the links below:
+   * https://vitepress-sidebar.jooy2.com/guide/api
+   */
+  documentRootPath: '/docs',
+  scanStartPath: 'DLC',
+  resolvePath: '/DLC/',
   // useTitleFromFileHeading: true,
   useTitleFromFrontmatter: true,
   // frontmatterTitleFieldName: 'title',
@@ -101,8 +147,9 @@ export default withPwa(
       // https://vitepress.dev/reference/default-theme-config
       logo: "/logo.webp",
       nav: [
-        { text: "Home", link: "/" },
-        { text: "Docs", link: "/C01-创建角色/1.1第一步：八属性与属性加值.md" },
+        { text: "主页", link: "/" },
+        { text: "核心书", link: "/Main/C01-创建角色/1.1第一步：八属性与属性加值.md" },
+        { text: "拓展", link: "/DLC/古老者TheOldOnes/C2-冒险" },
         { text: "About", link: "/0.关于.md" },
       ],
 
@@ -150,7 +197,7 @@ export default withPwa(
         pattern: "https://github.com/ZYL9/PFRPG/edit/main/docs/:path",
         text: "Edit this page on GitHub",
       },
-      sidebar: generateSidebar(vitepressSidebarOptions)
+      sidebar: generateSidebar([vitepressSidebarOptions_MAIN, vitepressSidebarOptions_DLC])
     },
     markdown: {
       image: {
