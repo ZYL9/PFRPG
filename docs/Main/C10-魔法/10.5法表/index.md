@@ -41,7 +41,7 @@ chameleon
 
 侦测隐匿 detect concealment
 
-熄火术 extinguish fire
+灭火术 extinguish fire
 
 浮空术 levitation
 
