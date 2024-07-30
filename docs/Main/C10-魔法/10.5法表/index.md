@@ -57,7 +57,7 @@ chameleon
 
 伊森之甲 armor of ithan
 
-breath without air
+无气呼吸 breath without air
 
 能量矢 energy bolt
 
