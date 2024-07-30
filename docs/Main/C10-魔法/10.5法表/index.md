@@ -33,7 +33,7 @@ title: "法表"
 
 糊涂术 befuddle
 
-chameleon
+避役术 chameleon
 
 攀爬术 climb
 
@@ -43,7 +43,7 @@ chameleon
 
 灭火术 extinguish fire
 
-浮空术 levitation
+漂浮术 levitation
 
 骇人喘息 heavy breathing
 
@@ -59,13 +59,13 @@ chameleon
 
 无气呼吸 breath without air
 
-能量矢 energy bolt
+能量箭 energy bolt
 
 妖精交谈 faerie speak
 
-风之指 fingers of the wind
+风掌术 fingers of the wind
 
-悬浮于空 float in air
+浮空术 float in air
 
 助燃术 ignite fire
 
