@@ -67,7 +67,9 @@ title: "法表"
 
 浮空术 float in air
 
-助燃术 ignite fire
+助燃术 Fuel Flame
+
+点燃 ignite fire
 
 火焰免疫 impervious to fire
 
@@ -81,10 +83,10 @@ title: "法表"
 
 抵抗火焰 resist fire
 
-看破结界 see wards
+看破雕纹 see wards
 
 感知陷阱 sense traps
 
-念力 telekinesis
+念力咒 telekinesis
 
-元素魔法
+
