@@ -89,4 +89,36 @@ title: "法表"
 
 念力咒 telekinesis
 
+## 4级
 
+Astral Projection ( 10) 
+
+Blind (8) 
+
+Carpet of Adhesion (10) 
+
+Charismatic Aura (10) 
+
+Cure Minor Disorders ( 10) 
+
+Energy Field (10) 
+
+Fire Bolt (10) 
+
+Fool's Gold (10) 
+
+Ley Line Transmission (30) 
+
+Magic Net (7) 
+
+Multiple Image (7) 
+
+Repel Animals (7) 
+
+Seal (7) 
+
+Shadow Meld (10) 
+
+Swim as a Fish (6) 
+
+Trance (10)
