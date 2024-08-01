@@ -91,34 +91,34 @@ title: "法表"
 
 ## 4级
 
-Astral Projection ( 10) 
+星界投影 Astral Projection ( 10) 
 
-Blind (8) 
+目盲术 Blind (8) 
 
-Carpet of Adhesion (10) 
+黏毯术 Carpet of Adhesion (10) 
 
-Charismatic Aura (10) 
+魅力气场 Charismatic Aura (10) 
 
-Cure Minor Disorders ( 10) 
+次级疾病疗愈术 Cure Minor Disorders ( 10) 
 
-Energy Field (10) 
+能量场 Energy Field (10) 
 
-Fire Bolt (10) 
+火焰箭 Fire Bolt (10) 
 
-Fool's Gold (10) 
+愚人金 Fool's Gold (10) 
 
-Ley Line Transmission (30) 
+地脉广播 Ley Line Transmission (30) 
 
-Magic Net (7) 
+魔网术 Magic Net (7) 
 
-Multiple Image (7) 
+操纵影像 Multiple Image (7) 
 
-Repel Animals (7) 
+斥退动物 Repel Animals (7) 
 
-Seal (7) 
+封闭术 Seal (7) 
 
-Shadow Meld (10) 
+融影咒 Shadow Meld (10) 
 
-Swim as a Fish (6) 
+次级游鱼术 Swim as a Fish（minor） (6) 
 
-Trance (10)
+假死术 Trance (10)
