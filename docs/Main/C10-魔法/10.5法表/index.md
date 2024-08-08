@@ -111,7 +111,7 @@ title: "法表"
 
 魔网术 Magic Net (7) 
 
-操纵影像 Multiple Image (7) 
+多重幻象 Multiple Image (7) 
 
 斥退动物 Repel Animals (7) 
 
@@ -121,4 +121,4 @@ title: "法表"
 
 次级游鱼术 Swim as a Fish（minor） (6) 
 
-假死术 Trance (10)
+催眠术 Trance (10)
