@@ -122,3 +122,35 @@ title: "法表"
 次级游鱼术 Swim as a Fish（minor） (6) 
 
 催眠术 Trance (10)
+
+## 5级
+
+Calling (8) 
+
+Charm (12) 
+
+Circle of Flame (10) 
+
+Domination (10) 
+
+Energy Disruption (15) 
+
+Escape (8) 
+
+Eyes of Thoth (8) 
+
+Fly (15) 
+
+Heal Wounds (10) 
+
+Horrific Illusion (10) 
+
+Mend Cloth (12) 
+
+Size of the Behemoth (12) 
+
+Sleep (10) 
+
+Superhuman Speed (10) 
+
+Superhuman Strength (10) 
