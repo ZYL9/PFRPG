@@ -154,3 +154,43 @@ title: "法表"
 超人之速 Superhuman Speed (10) 
 
 超人之力 Superhuman Strength (10) 
+
+## 6级
+
+活化物品 Animate Object (15) 
+
+Apparition (20) 
+
+呼召雷霆 Call Lightning (15) 
+
+强迫咒 Compulsion (20) 
+
+野兽操控术 Control the Beasts (18) 
+
+治愈疾病 Cure Illness (15) 
+
+造食术 Create Bread & Milk (15) 
+
+侦测毒药 Detect Poison (10) 
+
+火球术 Fire Ball (10) 
+
+炎拳 Fire Fist (15) 
+
+免疫能量 Impervious to Energy (20) 
+
+魔鸽术 Magic Pigeon (20) 
+
+储忆咒 Memory Bank (12) 
+
+Reduce Self (20) 
+
+高级游鱼术 Swim as a Fish: Superior (12) 
+
+次级传送术 Teleport: Lesser (15) 
+
+时跃 Time Slip (20) 
+
+巧言术 Tongues (12) 
+
+Words of Truth (15)
