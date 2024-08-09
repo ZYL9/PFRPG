@@ -125,32 +125,32 @@ title: "法表"
 
 ## 5级
 
-Calling (8) 
+寻呼术 Calling (8) 
 
-Charm (12) 
+魅惑术 Charm (12) 
 
-Circle of Flame (10) 
+火环术 Circle of Flame (10) 
 
-Domination (10) 
+统御术 Domination (10) 
 
-Energy Disruption (15) 
+能量溃散 Energy Disruption (15) 
 
-Escape (8) 
+逃脱术 Escape (8) 
 
-Eyes of Thoth (8) 
+透特之眼 Eyes of Thoth (8) 
 
-Fly (15) 
+飞行术 Fly (15) 
 
-Heal Wounds (10) 
+治愈伤口 Heal Wounds (10) 
 
-Horrific Illusion (10) 
+恐怖幻景 Horrific Illusion (10) 
 
-Mend Cloth (12) 
+纫衣咒 Mend Cloth (12) 
 
-Size of the Behemoth (12) 
+贝西摩斯之型 Size of the Behemoth (12) 
 
-Sleep (10) 
+沉睡术 Sleep (10) 
 
-Superhuman Speed (10) 
+超人之速 Superhuman Speed (10) 
 
-Superhuman Strength (10) 
+超人之力 Superhuman Strength (10) 
