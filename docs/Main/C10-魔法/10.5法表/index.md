@@ -159,7 +159,7 @@ title: "法表"
 
 活化物品 Animate Object (15) 
 
-Apparition (20) 
+造影术 Apparition (20) 
 
 呼召雷霆 Call Lightning (15) 
 
@@ -175,15 +175,15 @@ Apparition (20)
 
 火球术 Fire Ball (10) 
 
-炎拳 Fire Fist (15) 
+炎拳咒 Fire Fist (15) 
 
 免疫能量 Impervious to Energy (20) 
 
 魔鸽术 Magic Pigeon (20) 
 
-储忆咒 Memory Bank (12) 
+存忆咒 Memory Bank (12) 
 
-Reduce Self (20) 
+自身微缩术 Reduce Self (20) 
 
 高级游鱼术 Swim as a Fish: Superior (12) 
 
@@ -193,4 +193,44 @@ Reduce Self (20)
 
 巧言术 Tongues (12) 
 
-Words of Truth (15)
+真实之言 Words of Truth (15)
+
+## 7级
+
+剧痛术 Agony (20) 
+
+活化&控制尸体 Animate & Control Dead (20) 
+
+隐匿法阵 Circle of Concealment (15 or 1 00) 
+
+束缚咒 Constrain Being (20) 
+
+魔法驱散屏障 Dispel Magic Barriers (20) 
+
+鹰扬术 Fly as the Eagle (25) 
+
+静默球 Globe of Silence (20) 
+
+治愈自身 Heal Self (20) 
+
+固定咒 Immobilize (25) 
+
+高级隐形术 Invisibility: Superior (20) 
+
+有限无敌术 Invulnerability: Limited (25) 
+
+生命汲取 Life Drain (25) 
+
+动物变形术 Metamorphosis: Animal (25) 
+
+净化术 Purification (20) 
+
+预见术 Second Sight (25) 
+
+风袭 Wind Rush (20) 
+
+闪烁 Wink-Out (20+) 
+
+巫瓶咒 Witch Bottle (28) 
+
+X射线视觉 X-Ray Vision (25) 
