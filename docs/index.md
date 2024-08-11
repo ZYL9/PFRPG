@@ -11,8 +11,11 @@ hero:
     alt: 假装有封面
   actions:
     - theme: brand
-      text: Getting Start
-      link: /C01-创建角色/1.1第一步：八属性与属性加值.md
+      text: 核心书
+      link: /Main/C01-创建角色/1.1第一步：八属性与属性加值.md
+    - theme: brand
+      text: 拓展
+      link: /DLC/古老者TheOldOnes/C2-冒险
     - theme: alt
       text: About
       link: /0.关于.md

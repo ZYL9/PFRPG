@@ -10,7 +10,7 @@
 .vscode
 dist
 cache
-temp
+temp*
 examples-temp
 node_modules
 pnpm-global
@@ -22,3 +22,4 @@ output_markdown
 
 *.png
 *.jpg
+*.epub
