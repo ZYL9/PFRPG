@@ -201,17 +201,17 @@ title: "法表"
 
 活化&控制尸体 Animate & Control Dead (20) 
 
-隐匿法阵 Circle of Concealment (15 or 1 00) 
+隐匿之环 Circle of Concealment (15 or 1 00) 
 
-束缚咒 Constrain Being (20) 
+牵制咒 Constrain Being (20) 
 
-魔法驱散屏障 Dispel Magic Barriers (20) 
+驱散魔法造物 Dispel Magic Barriers (20) 
 
 鹰扬术 Fly as the Eagle (25) 
 
 静默球 Globe of Silence (20) 
 
-治愈自身 Heal Self (20) 
+自愈术 Heal Self (20) 
 
 固定咒 Immobilize (25) 
 
@@ -219,7 +219,7 @@ title: "法表"
 
 有限无敌术 Invulnerability: Limited (25) 
 
-生命汲取 Life Drain (25) 
+生命汲取术 Life Drain (25) 
 
 动物变形术 Metamorphosis: Animal (25) 
 
