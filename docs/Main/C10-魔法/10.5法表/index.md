@@ -225,12 +225,49 @@ title: "法表"
 
 净化术 Purification (20) 
 
-预见术 Second Sight (25) 
+千里眼 Second Sight (25) 
 
 风袭 Wind Rush (20) 
 
-闪烁 Wink-Out (20+) 
+相位转移 Wink-Out (20+) 
 
 巫瓶咒 Witch Bottle (28) 
 
-X射线视觉 X-Ray Vision (25) 
+透视咒 X-Ray Vision (25) 
+
+## 8级
+
+灵体交流术 Commune with Spirits (25) 
+
+驱魔咒 Exorcism (30) 
+
+狼眼术 Eyes of the Wolf (25) 
+
+Hallucination (30) 
+
+定位术 Locate (30) 
+
+爱之魅惑 Love Charm (40) 
+
+运气诅咒 Luck Curse (40) 
+
+人脸变形术 Metamorphosis: Human (40) 
+
+次级诅咒 Minor Curse (35) 
+
+失效 Negate Magic (30) 
+
+神谕术 Oracle (30) 
+
+感知维度异常 Sense Dimensional Anomaly (30) 
+
+疾病术 Sickness (50) 
+
+腐败术 Spoil (30) 
+
+化石为肉 Stone to Flesh (30) 
+
+Time Capsule (30) 
+
+困惑之鞭 Wisps of Confusion (40) 
+
