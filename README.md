@@ -16,21 +16,21 @@ python spilter.py
 ```
 --- 
 
-deploy
+### deploy
 ```sh
-# generate sidebar file
-pnpm run prebuild
 # vitepress build
 pnpm run build
+# output file in ./docs/.vitepress/dist
+# serve
+pnpm run preview
 ```
 
-support docker
-need to change npm source/apk source
+support docker(Not recommend)
 ```sh
 docker run build .
 ```
 
-compile to epub
+compile to epub(Not recommend, should use pandoc instead)
 ```sh
 pip install markdown2 ebooklib
 python md2pub.py
