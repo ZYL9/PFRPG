@@ -79,7 +79,7 @@ SDC：135
 
 潜能点：158
 
-已知法术：Charm, 辨识魔法 decipher magic, 目盲闪光 blinding flash, 烟雾术 cloud of smoke, 沉睡术 sleep, 隐身术 invisibility, levitate, tongues, fear, call lightning, 火球术 fireball, negate magic, heal self, 人类变形术 metamorphosis: human, and magic pigeon.
+已知法术：Charm, 辨识魔法 decipher magic, 目盲闪光 blinding flash, 烟雾术 cloud of smoke, 沉睡术 sleep, 隐身术 invisibility, levitate, tongues, fear, call lightning, 火球术 fireball, 失效 negate magic, heal self, 人类变形术 metamorphosis: human, and magic pigeon.
 
 技能：历史68%、恶魔和怪物学识75%、妖精学识75%、宗教学识73%、伪声56%、所有语言95%
 
