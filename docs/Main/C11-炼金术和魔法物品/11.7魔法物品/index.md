@@ -25,7 +25,7 @@ title: "11.7魔法物品"
 
 - 变化珠 Marble of Transformation
 
-## 织物 Fabric
+## 魔法织物 Fabric
 
 - 神行靴 Boots of Fleetness 
 
@@ -61,7 +61,7 @@ title: "11.7魔法物品"
 
 - 铁线 Thread of Iron 
 
-## 妆造 Make-Up 
+## 魔法妆造 Make-Up 
 
 - 惊骇假发 Fright Wig 
 
