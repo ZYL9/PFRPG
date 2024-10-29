@@ -16,6 +16,9 @@ hero:
     - theme: brand
       text: 拓展
       link: /DLC/古老者TheOldOnes/C2-冒险
+    - theme: brand
+      text: 怪兽图鉴
+      link: /Monster/怪兽图鉴.md
     - theme: alt
       text: About
       link: /0.关于.md
