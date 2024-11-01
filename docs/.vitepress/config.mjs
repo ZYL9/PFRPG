@@ -150,6 +150,7 @@ export default withPwa(
         { text: "主页", link: "/" },
         { text: "核心书", link: "/Main/C01-创建角色/1.1第一步：八属性与属性加值.md" },
         { text: "拓展", link: "/DLC/古老者TheOldOnes/C2-冒险" },
+        { text: "怪兽图鉴", link: "/Monster/怪兽图鉴" },
         { text: "About", link: "/0.关于.md" },
       ],
 
