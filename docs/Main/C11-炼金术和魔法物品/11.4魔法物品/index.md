@@ -35,7 +35,7 @@ title: "11.4魔法物品"
 
 - 基路伯索 Cherubot Rope 
 
-- 伪装披风 Cloak of Guises 
+- 千面幻影披风 Cloak of Guises 
 
 - 隐形披风 Cloak of Invisibility 
 
@@ -63,7 +63,7 @@ title: "11.4魔法物品"
 
 ## 魔法妆造 Make-Up 
 
-- 惊骇假发 Fright Wig 
+- 惊魂假发 Fright Wig 
 
 - 魔法妆造（伪装） Magic Make-Up (disguise) 
 
@@ -79,7 +79,7 @@ title: "11.4魔法物品"
 
 - 秘密之书 Book of Secrets 
 
-- 储更多水器 Container of Much Water 
+- 魔法水囊 Container of Much Water 
 
 - 火烛芯 Fire Wick 
 
@@ -98,3 +98,5 @@ title: "11.4魔法物品"
 - 尖叫瓶 Screech Bottles 
 
 - 想象之书 Tome of Images 
+
+## 仙灵食物 Faerie Foods
